@@ -1,5 +1,5 @@
 # RBDmodel-io
-Repository containing the Rigid Body Dynamic MATLAB model of the spine, referenced in Dukkipati 2025 
+Repository containing the Rigid Body Dynamic MATLAB model of the spine, referenced in Dukkipati & Driscoll 2025 
 
 
 ![Schematic of the RBD Input-Output model](schematic.png)
