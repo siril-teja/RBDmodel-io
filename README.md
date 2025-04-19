@@ -1,7 +1,7 @@
 # RBDmodel-io
 Repository containing the Rigid Body Dynamic MATLAB model of the spine, referenced in Dukkipati & Driscoll 2025
 
-S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine Model Inclusive of Intra-Abdominal Pressure," in IEEE Transactions on Biomedical Engineering, doi: 10.1109/TBME.2025.3561692. 
+S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine Model Inclusive of Intra-Abdominal Pressure," in IEEE Transactions on Biomedical Engineering, doi: ![10.1109/TBME.2025.3561692](http://doi.org/10.1109/tbme.2025.3561692). 
 
 
 ![Schematic of the RBD Input-Output model](schematic.png)
