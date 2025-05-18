@@ -65,5 +65,5 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## Contact
 For questions or editable model files, contact the authors:
-- Siril Teja Dukkipati: siril.dukkipati@mail.mcgill.ca
+- Siril Dukkipati: siril.dukkipati@mail.mcgill.ca
 - Mark Driscoll: mark.driscoll@mcgill.ca
