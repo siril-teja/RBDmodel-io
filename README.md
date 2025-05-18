@@ -7,14 +7,23 @@ S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine 
 ![Schematic of the RBD Input-Output model](schematic.png)
 
 
-## Model inputs:
+## Project Overview
+This repository provides a MATLAB/Simulink implementation of a rigid body dynamic (RBD) model of the human spine, including intra-abdominal pressure (IAP) effects. The model is designed for fast simulation and benchmarking, and is referenced in the above publication.
 
-1. To change model inputs, go to Modeling tab -> Design -> Model Workspace
-2. In the model workspace, all the tunable parameters are listed
-3. The parameters ending with "_FIXED" can not be changed as they are directly referenced in the simulink blocks inside the main_model
-4. All the other paramenters can be changed
+### Main Files
+- `RBDmodel_io.slx` / `main_model.slxp`: Simulink models of the spine.
+- `benchmarking.m`: MATLAB script to benchmark model compile and run times.
+- `README.md`: Project documentation.
+- `CITATION.cff`: Citation information.
+- `LICENSE`: MIT License.
 
+## Simulink Model Structure
+The Simulink model (`RBDmodel_io.slx` or `main_model.slxp`) consists of:
+- **Model Workspace**: Contains all tunable parameters. Parameters ending with `_FIXED` are not user-editable.
+- **Inputs**: Muscle forces, moments, and intra-abdominal pressure (see table below).
+- **Model_Outputs Subsystem**: All outputs are available here. Use Simulink scopes or "To Workspace" blocks to view/export results.
 
+### Model Inputs
 | Parameter          | Description                                              |
 |--------------------|----------------------------------------------------------|
 | IAP_Pa             | Intra-abdominal pressure in Pascals, used in IAP Model 1 |
@@ -26,12 +35,35 @@ S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine 
 | Moment_LB          | Lateral bending Moment at L1 in Nm                       |
 | Moment_AR          | Axial rotation Moment at L1 in Nm                        |
 
+### Model Outputs
+- All outputs are available in the `Model_Outputs` subsystem.
+- To view outputs, open the corresponding Simulink scope or use "To Workspace" blocks to export data.
 
-## Model outputs
+## Running the Model
+1. Open MATLAB and navigate to the `RBDmodel-io` directory.
+2. Open the Simulink model (`RBDmodel_io.slx` or `main_model.slxp`).
+3. Adjust input parameters in the Model Workspace as needed.
+4. Run the simulation.
+5. View outputs in the `Model_Outputs` subsystem.
 
-1. All possible model outputs are made available in the Model_Outputs subsystem
-2. To view any output, simupy open the corresponding scope. You can also export   	the data outside MATLAB using "To Workspace" blocks
+## Benchmarking Script
+The `benchmarking.m` script benchmarks the model's compile and run times:
+- Edit `numRuns` to set the number of repetitions.
+- Run the script in MATLAB. It will print average and standard deviation for compile and run times.
 
-## More info
+## Windows/MATLAB Notes
+- This project is tested on Windows with MATLAB and Simulink.
+- Some files (`.mexw64`, `.slxc`, `.slxp`) are platform-specific or binary.
+- For editable model files, contact the authors.
 
-Contact the authors for an editable copy of the model.
+## Citation
+If you use this software, please cite:
+S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine Model Inclusive of Intra-Abdominal Pressure," IEEE Transactions on Biomedical Engineering, 2025. [DOI](http://doi.org/10.1109/TBME.2025.3561692)
+
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
+
+## Contact
+For questions or editable model files, contact the authors:
+- Siril Teja Dukkipati: siril.dukkipati@mail.mcgill.ca
+- Mark Driscoll: mark.driscoll@mcgill.ca
