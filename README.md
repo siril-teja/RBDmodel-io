@@ -61,7 +61,16 @@ If you use this software, please cite:
 S. T. Dukkipati and M. Driscoll, "Evaluation of a Fast-Solving Rigid Body Spine Model Inclusive of Intra-Abdominal Pressure," IEEE Transactions on Biomedical Engineering, 2025. [DOI](http://doi.org/10.1109/TBME.2025.3561692)
 
 ## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ## Contact
 For questions or editable model files, contact the authors:
